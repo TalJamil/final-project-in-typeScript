@@ -1,0 +1,64 @@
+/* מרכז את כל התוכן באמצע הדף */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* גובה קבוע למניעת תזוזה */
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* עיצוב הריבוע הסגול */
+.quote-box {
+    background-color: #6a0dad;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    min-height: 120px; /* גובה מינימלי כדי למנוע שינוי בגובה */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* עיצוב המחבר */
+.quote-author {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* עיצוב תוכן הציטוט */
+.quote-content {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 40px; /* מניעת קפיצות על ידי שמירה על שטח מוגדר */
+}
+
+/* כפתור הצגת ציטוט חדש */
+.fetch-quote-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #6a0dad;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.fetch-quote-btn:hover {
+    background-color: #d1b3ff;
+}
